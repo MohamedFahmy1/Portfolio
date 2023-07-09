@@ -1,0 +1,34 @@
+@import "../../styles/sass/helpers/variables";
+@import "../../styles/sass/helpers/mixins";
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(110%);
+  opacity: 0;
+  transition: 1.5s;
+  @include average-screen {
+    flex-basis: 100%;
+  }
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  & img {
+    max-width: 70%;
+  }
+  & div {
+    text-align: center;
+  }
+  & .front {
+    @include center;
+  }
+  & .back {
+    @include center;
+  }
+}

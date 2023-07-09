@@ -1,0 +1,103 @@
+@import "../../styles/sass/helpers/variables";
+@import "../../styles/sass/helpers/mixins";
+@import "../../styles/sass/components/header";
+
+.contact {
+  position: relative;
+  min-height: 80vh;
+  color: $black-color;
+  background-color: $white-color;
+  overflow: hidden;
+  & .heading {
+    margin-top: 0;
+    &::after {
+      content: "Get In Touch";
+    }
+  }
+  & .contactContent {
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    position: relative;
+    @include average-screen {
+      flex-wrap: wrap;
+    }
+    & .left-content {
+      position: relative;
+      transition: 0.7s;
+      opacity: 0;
+      left: -20%;
+      &.visible {
+        opacity: 1;
+        left: 0;
+      }
+      & h3 {
+        margin: 0;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-decoration: underline;
+      }
+      & .box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;
+        & .icon {
+          color: $main-color;
+          width: 25px;
+          height: 25px;
+          margin-right: 20px;
+          display: flex;
+          text-align: center;
+          filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+          -webkit-filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+        }
+        & .info {
+          & h4 {
+            margin: 0;
+            font-size: 20px;
+          }
+          & a {
+            color: $black-color;
+            filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+            -webkit-filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+          }
+          & p {
+            margin: 0;
+          }
+        }
+      }
+      & .socialMedia {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        & .icon {
+          color: $main-color;
+          height: 30px;
+          text-align: center;
+          filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+          -webkit-filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+        }
+      }
+    }
+  }
+}
+.darkModeEnabled {
+  $black-color: #fff;
+  $white-color: #333;
+  & .contact {
+    color: $black-color;
+    background-color: $white-color;
+
+    & .contactContent {
+      & .box {
+        & .info {
+          & a {
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+}

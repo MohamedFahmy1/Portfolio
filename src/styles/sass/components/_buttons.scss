@@ -1,0 +1,24 @@
+/* Start Button */
+.main-btn {
+  color: #ffc400;
+  background-color: #ff3150;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  &:hover {
+    background-color: #e81a39;
+  }
+}
+.main-btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e81a39 !important;
+    color: $yellow-color !important;
+  }
+}
+/* End Button */

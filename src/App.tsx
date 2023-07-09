@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Landing from "./components/landing/Landing";
+import Header from "./components/layout/Header";
+import { useState, useEffect } from "react";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/layout/Footer";
 function App() {
+  const [scrollTop, setScrollTop] = useState<0 | number>(0);
+  const [darkMode, setdarkMode] = useState<boolean>(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const darkModeHandler = (darkModeStatus: boolean) => {
+    setdarkMode((prevState) => (prevState = darkModeStatus));
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={!darkMode ? "darkModeEnabled" : ""}>
+      <Header scrollTop={scrollTop} darkMode={darkModeHandler} />
+      <Landing />
+      <Skills scrollTop={scrollTop} />
+      <Projects darkModeEnabled={darkMode} />
+      <Contact scrollTop={scrollTop} />
+      <Footer />
     </div>
   );
 }

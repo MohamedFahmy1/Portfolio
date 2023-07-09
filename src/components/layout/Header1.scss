@@ -1,0 +1,273 @@
+@import "../../styles/sass/helpers/_variables";
+
+nav .nightMode-container {
+  margin: 0px auto;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  background: linear-gradient(to right, skyblue, lightblue);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+nav .circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  background-color: yellow;
+  top: 3px;
+  left: 4px;
+  box-shadow: red 0px 0px 5px;
+}
+nav .hole:first-child {
+  height: 4px;
+  width: 8px;
+  right: 1px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightgray, lightsalmon);
+  border-radius: 70%;
+}
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightcoral, lightsalmon);
+  border-radius: 70%;
+}
+nav .hole {
+  opacity: 0;
+}
+nav .hole:last-child {
+  height: 6px;
+  width: 12px;
+  left: 1px;
+  top: 4px;
+  transform: rotate(-45deg);
+}
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightgray, lightsalmon);
+  border-radius: 70%;
+}
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightcoral, lightsalmon);
+  border-radius: 70%;
+}
+nav .cloud.one {
+  top: 12px;
+  left: 30px;
+  width: 15px;
+  height: 3px;
+}
+nav .cloud {
+  border-radius: 50%;
+  position: absolute;
+  background-color: whitesmoke;
+}
+nav .cloud.two {
+  top: 6px;
+  left: 15px;
+  width: 20px;
+  height: 4px;
+  z-index: 2;
+}
+nav .cloud.three {
+  top: 20px;
+  left: 12px;
+  width: 30px;
+  height: 6px;
+}
+
+nav .nightMode-container.night {
+  background: linear-gradient(midnightblue, rebeccapurple);
+}
+nav .nightMode-container {
+  margin: 0px auto;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  background: linear-gradient(to right, skyblue, lightblue);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+nav .night > .circle {
+  background-color: whitesmoke;
+  box-shadow: lightblue 0px 0px 5px;
+  transform: translate(30px, 0px);
+}
+nav .circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  background-color: yellow;
+  top: 3px;
+  left: 4px;
+  box-shadow: red 0px 0px 5px;
+}
+nav .night .hole {
+  opacity: 0.6;
+}
+
+nav .hole:first-child {
+  height: 4px;
+  width: 8px;
+  right: 1px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightgray, lightsalmon);
+  border-radius: 70%;
+}
+nav .hole:last-child {
+  height: 6px;
+  width: 12px;
+  left: 1px;
+  top: 4px;
+  transform: rotate(-45deg);
+}
+
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightgray, lightsalmon);
+  border-radius: 70%;
+}
+
+nav .circle > .hole {
+  position: absolute;
+  height: 6px;
+  width: 12px;
+  right: 2px;
+  top: 4px;
+  transform: rotate(45deg);
+  background: linear-gradient(lightcoral, lightsalmon);
+  border-radius: 70%;
+}
+nav .night > .cloud.one {
+  height: 3px;
+  width: 3px;
+  left: 25px;
+  background-color: lightyellow;
+  box-shadow: yellow 0px 0px 5px;
+}
+nav .cloud.one {
+  top: 12px;
+  left: 30px;
+  width: 15px;
+  height: 3px;
+}
+nav .cloud {
+  border-radius: 50%;
+  position: absolute;
+  background-color: whitesmoke;
+}
+nav .night > .cloud.two {
+  height: 4px;
+  width: 4px;
+  left: 15px;
+  background-color: lightyellow;
+  box-shadow: yellow 0px 0px 5px;
+}
+nav .cloud.two {
+  top: 6px;
+  left: 15px;
+  width: 20px;
+  height: 4px;
+  z-index: 2;
+}
+nav .cloud {
+  border-radius: 50%;
+  position: absolute;
+  background-color: whitesmoke;
+}
+nav .night > .cloud.three {
+  height: 6px;
+  width: 6px;
+  left: 10px;
+  top: 18px;
+  background-color: lightyellow;
+  box-shadow: yellow 0px 0px 5px;
+}
+header nav button {
+  color: $white-color;
+  position: relative;
+  filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+}
+header.sticky nav button.dark {
+  color: $black-color;
+}
+header.sticky nav button:hover {
+  color: $white-color;
+}
+header.sticky li button:hover:after,
+header.sticky li button.onView:after {
+  scale: 1;
+  transform-origin: left;
+}
+header.sticky li button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $white-color;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 0.3s ease-out;
+  -webkit-transition: scale 0.3s ease-out;
+  -moz-transition: scale 0.3s ease-out;
+  -ms-transition: scale 0.3s ease-out;
+  -o-transition: scale 0.3s ease-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}

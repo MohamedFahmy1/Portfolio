@@ -1,0 +1,12 @@
+// Main Colors
+$main-color: #2196f3;
+$white-color: #fff;
+$black-color: #333;
+
+// transitions
+$main-transition: 0.3s;
+
+.darkModeEnabled {
+  $white-color: #333;
+  $black-color: #fff;
+}

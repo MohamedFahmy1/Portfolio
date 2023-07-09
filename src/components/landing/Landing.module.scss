@@ -1,0 +1,21 @@
+@import "../../styles/sass/layout/gird";
+@import "../../styles/sass/helpers/mixins";
+.landing {
+  position: relative;
+  height: 100vh;
+  background-image: url(../../images/pxfuel.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  & .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+    @include average-screen {
+      flex-wrap: wrap-reverse;
+      gap: 0;
+    }
+  }
+}

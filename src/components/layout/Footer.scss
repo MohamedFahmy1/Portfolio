@@ -1,0 +1,16 @@
+@import "../../styles/sass/helpers/variables";
+@import "../../styles/sass/helpers/mixins";
+
+footer {
+  background-image: url(../../images/footer.jpg);
+  background-size: cover;
+  min-height: 100px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & span {
+    color: $main-color;
+  }
+}

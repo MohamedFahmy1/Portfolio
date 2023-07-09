@@ -1,0 +1,105 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+.heading {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  color: $black-color;
+  font-family: ubuntu, sans-serif;
+  user-select: none;
+  & span {
+    color: $black-color;
+  }
+  & .icon {
+    margin-right: 15px;
+    color: $main-color;
+    filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  &::after {
+    content: "What I Know";
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    font-size: 20px;
+    color: $main-color;
+    padding: 5px;
+    border-radius: 55px;
+    background-color: $white-color;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
+.darkModeEnabled {
+  $white-color: #333;
+  $black-color: #fff;
+  .heading {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: $black-color;
+    font-family: ubuntu, sans-serif;
+    user-select: none;
+    & span {
+      color: $black-color;
+    }
+    & .icon {
+      margin-right: 15px;
+      color: $main-color;
+      filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background: #111;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+    &::after {
+      content: "What I Know";
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      font-size: 20px;
+      color: $main-color;
+      padding: 5px;
+      border-radius: 55px;
+      background-color: $white-color;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+  }
+}

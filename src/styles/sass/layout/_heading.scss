@@ -1,0 +1,9 @@
+/* Start Heading */
+.main-title::after {
+  @include abs-x;
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  background-color: $main-color;
+}
+/* End Heading */

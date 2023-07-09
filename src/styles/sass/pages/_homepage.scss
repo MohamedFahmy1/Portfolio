@@ -1,0 +1,111 @@
+/* Start Landing */
+.landing {
+  background-color: $green-color;
+  min-height: calc(100vh - 72px);
+}
+/* End Landing */
+/* Start Features */
+.features {
+  .icon-holder {
+    height: 200px;
+    svg {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .number {
+      font-size: 12rem;
+      color: $section-color;
+    }
+    .icon {
+      color: $main-color;
+      font-size: 4rem;
+    }
+  }
+  h4 {
+    color: $yellow-color;
+  }
+}
+/* End Features */
+/* Start Work */
+.work {
+  background-color: $section-color;
+  ul {
+    li {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    li:not(.main-btn):hover {
+      color: $red-color;
+    }
+  }
+  .box {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: attr(data-work);
+      position: absolute;
+      background-color: rgba($color: $main-color, $alpha: 0.5);
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      @include center;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 1.5rem;
+      transform: translateX(calc(-100% - 5px));
+    }
+    &:hover::before {
+      transform: translateX(0);
+    }
+  }
+}
+/* End Work */
+/* Start Stuff */
+.stuff {
+  .description {
+    max-width: 500px;
+  }
+}
+/* End Stuff */
+/* Start Team */
+.team {
+  background-color: $section-color;
+  h2 {
+    color: $yellow-color;
+  }
+  .box {
+    h4 {
+      background-color: $main-color;
+    }
+  }
+}
+/* End Team */
+/* Start Project */
+.project {
+  background-color: $green-color;
+}
+/* End Project */
+/* Start Blog */
+/* End Blog */
+/* Start Subscribe */
+.subscribe {
+  background-color: $yellow-color;
+  input {
+    border: none;
+    border-bottom: 1px solid white;
+    &:focus {
+      outline: none;
+      color: white;
+    }
+    &::placeholder {
+      color: white;
+    }
+  }
+  a {
+    background-color: $green-color;
+    color: $yellow-color;
+    padding: 0.5rem 1rem;
+  }
+}
+/* End Subscribe */

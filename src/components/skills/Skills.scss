@@ -1,0 +1,116 @@
+@import "../../styles/sass/helpers/variables";
+@import "../../styles/sass/helpers/mixins";
+.skills {
+  min-height: calc(100vh - 127px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: $white-color;
+  & .text {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: $black-color;
+    font-family: ubuntu, sans-serif;
+    user-select: none;
+    & .icon {
+      margin-right: 10px;
+      color: $main-color;
+      filter: drop-shadow(1px 1.5px 0.5px #4b4b4b);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background: #111;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+    &::after {
+      content: "What I Know";
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      font-size: 20px;
+      color: $main-color;
+      padding: 5px;
+      border-radius: 55px;
+      background-color: $white-color;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+  }
+  & .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    @include average-screen {
+      flex-wrap: wrap;
+    }
+    & .textContent {
+      position: relative;
+      right: 100%;
+      transition: 1.5s;
+      overflow: hidden;
+      opacity: 0;
+      flex-basis: 57%;
+      @include average-screen {
+        flex-basis: 100%;
+      }
+      &.visible {
+        right: 0;
+        opacity: 1;
+      }
+      & h3 {
+        font-size: 35px;
+        font-weight: 600;
+        margin: 0;
+        color: $black-color;
+        & span {
+          color: $main-color;
+        }
+      }
+      & p {
+        font-size: 25px;
+        & span {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+.darkModeEnabled {
+  $white-color: #333;
+  $black-color: #fff;
+  .skills {
+    background-color: $white-color;
+    & .text {
+      color: $black-color;
+      &::after {
+        background-color: $white-color;
+      }
+    }
+    & .content {
+      & h3 {
+        color: $black-color;
+      }
+      & p {
+        color: $black-color;
+      }
+    }
+  }
+}

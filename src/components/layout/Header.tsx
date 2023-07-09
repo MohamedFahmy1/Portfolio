@@ -15,19 +15,37 @@ const Header: React.FC<{
   const [darkMode, setDarkMode] = useState(false);
   const skillsClickHandler = () => {
     window.scrollTo({
-      top: 670,
+      top: 680,
       behavior: "smooth",
     });
   };
   const projectsClickHandler = () => {
     window.scrollTo({
-      top: 1750,
+      top: 1770,
       behavior: "smooth",
     });
   };
   const contactClickHandler = () => {
     window.scrollTo({
-      top: 2870,
+      top: 2860,
+      behavior: "smooth",
+    });
+  };
+  const skillsClickHandlermob = () => {
+    window.scrollTo({
+      top: 780,
+      behavior: "smooth",
+    });
+  };
+  const projectsClickHandlermob = () => {
+    window.scrollTo({
+      top: 2600,
+      behavior: "smooth",
+    });
+  };
+  const contactClickHandlermob = () => {
+    window.scrollTo({
+      top: 3800,
       behavior: "smooth",
     });
   };
@@ -48,7 +66,8 @@ const Header: React.FC<{
           <ul>
             <li>
               <button
-                className={props.scrollTop < 660 ? "icon active" : "icon"}
+                className={props.scrollTop < 780 ? "icon active" : "icon"}
+                onClick={homeClickHandler}
               >
                 <div className="iconHolder">
                   <FontAwesomeIcon icon={faHouseChimney} className={"icon"} />
@@ -59,10 +78,11 @@ const Header: React.FC<{
             <li>
               <button
                 className={
-                  props.scrollTop >= 660 && props.scrollTop < 1730
+                  props.scrollTop >= 780 && props.scrollTop < 2600
                     ? "icon active"
                     : "icon"
                 }
+                onClick={skillsClickHandlermob}
               >
                 <div className="iconHolder">
                   <FontAwesomeIcon icon={faChartSimple} className={"icon"} />
@@ -73,10 +93,11 @@ const Header: React.FC<{
             <li>
               <button
                 className={
-                  props.scrollTop >= 1730 && props.scrollTop < 2850
+                  props.scrollTop >= 2600 && props.scrollTop < 3800
                     ? "icon active"
                     : "icon"
                 }
+                onClick={projectsClickHandlermob}
               >
                 <div className="iconHolder">
                   <FontAwesomeIcon icon={faCode} className={"icon"} />
@@ -86,7 +107,8 @@ const Header: React.FC<{
             </li>
             <li>
               <button
-                className={props.scrollTop >= 2850 ? "icon active" : "icon"}
+                className={props.scrollTop >= 3800 ? "icon active" : "icon"}
+                onClick={contactClickHandlermob}
               >
                 <div className="iconHolder">
                   <FontAwesomeIcon icon={faPhone} className={"icon"} />

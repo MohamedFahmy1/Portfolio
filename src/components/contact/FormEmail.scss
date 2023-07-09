@@ -30,6 +30,9 @@
       color: $main-color;
       font-size: 20px;
       resize: none;
+      @include average-screen {
+        width: 100%;
+      }
     }
     & label {
       margin-bottom: 10px;

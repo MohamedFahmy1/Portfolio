@@ -8,7 +8,14 @@ const Footer = () => {
           <div className="copyWrite">
             <p>© 2023 - All Right Reserved</p>
             <p>
-              Designed By: <span>Mohamed Fahmy</span>
+              Designed By:{" "}
+              <a
+                href="https://github.com/mohamedFahmy1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mohamed Fahmy
+              </a>
             </p>
           </div>
         </div>

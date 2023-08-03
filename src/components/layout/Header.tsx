@@ -9,6 +9,9 @@ import {
   faHouseChimney,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import logoWhite from "../../images/white-removebg-preview.png";
+import logoCol from "../../images/colored-removebg-preview.png";
+import logoBlack from "../../images/black-removebg-preview.png";
 const Header: React.FC<{
   scrollTop: number | 0;
   darkMode: (darkMode: boolean) => void;
@@ -121,7 +124,16 @@ const Header: React.FC<{
         </div>
         <div className="logo">
           <div className="text">
-            Portf<span>olio</span>
+            <img
+              src={
+                props.scrollTop <= 10
+                  ? logoCol
+                  : darkMode
+                  ? logoBlack
+                  : logoWhite
+              }
+              alt="logo"
+            />
           </div>
         </div>
         <nav>

@@ -4,13 +4,20 @@
 .darkModeEnabled {
   $white-color: #333;
   $black-color: #fff;
-  header {
+  & header {
     &.sticky {
       & nav {
         & ul {
           & button {
+            color: $white-color !important;
+            &::after {
+              background-color: $white-color;
+            }
             &:hover {
               color: $white-color;
+              &::after {
+                background-color: $white-color;
+              }
             }
           }
         }
@@ -35,7 +42,7 @@
         & ul {
           & li {
             & button {
-              color: $white-color;
+              color: $black-color;
             }
           }
         }

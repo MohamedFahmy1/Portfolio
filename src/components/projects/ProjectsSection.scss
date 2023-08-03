@@ -17,6 +17,9 @@
 .effect-wrap .effect {
   position: absolute;
   z-index: 0;
+  @include mobile {
+    display: none;
+  }
 }
 .effect-1,
 .effect-5 {

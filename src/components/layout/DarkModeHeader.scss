@@ -1,0 +1,45 @@
+@import "../../styles/sass/helpers/variables";
+@import "../../styles/sass/helpers/mixins";
+
+.darkModeEnabled {
+  $white-color: #333;
+  $black-color: #fff;
+  header {
+    &.sticky {
+      & nav {
+        & ul {
+          & button {
+            &:hover {
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+    & .container {
+      & .mobileMenu {
+        @include average-screen {
+          & ul {
+            & li {
+              & button {
+                background-color: $white-color;
+                & span {
+                  color: $black-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      & nav {
+        & ul {
+          & li {
+            & button {
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

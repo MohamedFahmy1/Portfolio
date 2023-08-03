@@ -44,8 +44,7 @@ const Skills: React.FC<{ scrollTop: number | 0 }> = (props) => {
               this career and I have experience with languagues and libraries
               like <span>JavaScript </span>, <span>C# </span>, <span>Sass</span>
               , <span>TypeScript</span>.... and with frameworks like{" "}
-               <span>Next.js</span> &{" "}
-              <span>Bootstrap.</span>
+              <span>Next.js</span> & <span>Bootstrap.</span>
             </p>
           </div>
           <SkillsCards scrollTop={props.scrollTop} />

@@ -11,6 +11,8 @@ header {
   top: 0;
   transition: $main-transition;
   &.sticky {
+    background-color: $main-color;
+    padding: 10px;
     & nav {
       & ul {
         & button {
@@ -21,7 +23,7 @@ header {
       }
     }
     & span {
-      color: #333 !important;
+      color: $black-color;
     }
   }
   & .container {
@@ -152,46 +154,6 @@ header {
           }
         }
       }
-    }
-  }
-  .darkModeEnabled {
-    $white-color: #333;
-    $black-color: #fff;
-    header {
-      &.sticky {
-        & button {
-          color: $white-color;
-          &::after {
-            background-color: $white-color;
-          }
-          &:hover {
-            color: $white-color;
-          }
-        }
-        & span {
-          color: $white-color;
-        }
-      }
-    }
-    & nav {
-      & button {
-        &:hover {
-          color: $white-color;
-        }
-      }
-    }
-  }
-  &.sticky {
-    background-color: $main-color;
-    padding: 10px;
-
-    & button {
-      &:hover {
-        color: $white-color !important;
-      }
-    }
-    & span {
-      color: #333 !important;
     }
   }
 }

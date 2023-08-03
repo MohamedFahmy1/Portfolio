@@ -8,6 +8,7 @@ import Footer from "./components/layout/Footer";
 function App() {
   const [scrollTop, setScrollTop] = useState<0 | number>(0);
   const [darkMode, setdarkMode] = useState<boolean>(true);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollTop(window.scrollY);

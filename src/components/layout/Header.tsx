@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.scss";
 import "./Header1.scss";
+import "./DarkModeHeader.scss";
 import { useState } from "react";
 import {
   faChartSimple,

@@ -65,9 +65,10 @@ const ProjectsSection = () => {
           <FontAwesomeIcon className="icon" icon={faListCheck} />
           Projects
         </h2>
-        <div className="content">
+        <div className={"content"}>
           {projectsData.map((project) => (
             <ProjectCard
+              key={project.image}
               name={project.name}
               description={project.description}
               technologies={project.technologies}

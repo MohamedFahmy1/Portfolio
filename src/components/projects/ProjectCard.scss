@@ -2,6 +2,7 @@
 @import "../../styles/sass/helpers/variables";
 
 .projectsSection {
+  padding-bottom: 50px;
   & .content {
     grid-gap: 40px;
     display: grid;
@@ -13,18 +14,28 @@
     justify-items: center;
     height: auto;
     width: 100%;
+    transition: all 0.7s;
     & .card {
       flex-direction: row;
       justify-content: space-between;
       gap: 40px;
       height: 380px;
       padding: 20px;
-      background-color: #fff;
+      background-color: $white-color;
       border-radius: 30px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       display: flex;
       max-width: fit-content;
       z-index: 20;
+
+      @include average-screen {
+        flex-direction: column;
+        height: 680px;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
       & .image {
         background-color: hsla(0, 0%, 46%, 0.2);
         border-radius: 30px;
@@ -32,6 +43,9 @@
         height: auto;
         overflow: hidden;
         width: 550px;
+        @include average-screen {
+          width: 100%;
+        }
         & img {
           height: auto;
           width: 100%;
@@ -66,6 +80,9 @@
         justify-content: center;
         text-align: center;
         width: 450px;
+        @include average-screen {
+          width: 100%;
+        }
         & h3 {
           color: $main-color;
           margin: 0;
@@ -85,6 +102,9 @@
             color: #000;
             font-weight: 600;
             padding: 10px 10px;
+            @include mobile {
+              font-size: 12px;
+            }
           }
         }
         & .links {
@@ -116,6 +136,35 @@
               span {
                 color: $main-color;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.darkModeEnabled {
+  $white-color: #222;
+  $black-color: #fff;
+  & .projectsSection {
+    & .card {
+      background-color: $white-color;
+      & .description {
+        & p {
+          color: #ccc;
+        }
+        & .techs {
+          & span {
+            background-color: #111;
+            color: #ccc;
+          }
+        }
+        & .links {
+          & a {
+            & svg,
+            span {
+              color: #ccc;
             }
           }
         }

@@ -40,7 +40,7 @@ const ProjectCard: React.FC<projectsData> = ({
         <p>{description}</p>
         <div className="techs">
           {technologies.map((tech) => (
-            <span>{tech}</span>
+            <span key={tech}>{tech}</span>
           ))}
         </div>
         <div className="links">

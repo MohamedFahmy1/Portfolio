@@ -1,5 +1,6 @@
 import styles from "./LandingContent.module.scss";
 import { Typewriter } from "react-simple-typewriter";
+
 const LandingContent = () => {
   return (
     <div className={styles.content}>
@@ -15,10 +16,10 @@ const LandingContent = () => {
       </h2>
       <div className={styles.buttons}>
         <a
-          href="./image/mohamedFahmy.pdf"
+          href={require("../../images/mohamedfahmy.pdf")}
           target="_blank"
-          download="mohamedFahmy.pdf"
-          aria-label="CV"
+          rel="noreferrer"
+          download
         >
           <button className={styles.button}>
             <span></span>

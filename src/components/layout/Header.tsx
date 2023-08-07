@@ -31,7 +31,7 @@ const Header: React.FC<{
   };
   const contactClickHandler = () => {
     window.scrollTo({
-      top: 2860,
+      top: 4300,
       behavior: "smooth",
     });
   };
@@ -49,7 +49,7 @@ const Header: React.FC<{
   };
   const contactClickHandlermob = () => {
     window.scrollTo({
-      top: 3800,
+      top: 6700,
       behavior: "smooth",
     });
   };
@@ -97,7 +97,7 @@ const Header: React.FC<{
             <li>
               <button
                 className={
-                  props.scrollTop >= 2600 && props.scrollTop < 3800
+                  props.scrollTop >= 2600 && props.scrollTop < 6700
                     ? "icon active"
                     : "icon"
                 }
@@ -111,7 +111,7 @@ const Header: React.FC<{
             </li>
             <li>
               <button
-                className={props.scrollTop >= 3800 ? "icon active" : "icon"}
+                className={props.scrollTop >= 6700 ? "icon active" : "icon"}
                 onClick={contactClickHandlermob}
               >
                 <div className="iconHolder">
@@ -163,7 +163,7 @@ const Header: React.FC<{
             <li>
               <button
                 className={
-                  props.scrollTop >= 1740 && props.scrollTop < 2790
+                  props.scrollTop >= 1740 && props.scrollTop < 4300
                     ? "onView"
                     : ""
                 }
@@ -174,7 +174,7 @@ const Header: React.FC<{
             </li>
             <li>
               <button
-                className={props.scrollTop >= 2790 ? "onView" : ""}
+                className={props.scrollTop >= 4300 ? "onView" : ""}
                 onClick={contactClickHandler}
               >
                 Contact

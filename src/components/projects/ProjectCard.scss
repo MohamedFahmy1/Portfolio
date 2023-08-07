@@ -1,0 +1,125 @@
+@import "../../styles/sass/helpers/mixins";
+@import "../../styles/sass/helpers/variables";
+
+.projectsSection {
+  & .content {
+    grid-gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    height: auto;
+    width: 100%;
+    & .card {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
+      height: 380px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      max-width: fit-content;
+      z-index: 20;
+      & .image {
+        background-color: hsla(0, 0%, 46%, 0.2);
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: auto;
+        overflow: hidden;
+        width: 550px;
+        & img {
+          height: auto;
+          width: 100%;
+          transform: translateY(0%);
+          transition: transform 10s ease-in-out 0s;
+          &:hover {
+            transform: translateY(-75%);
+          }
+          &.weather {
+            height: 100%;
+            &:hover {
+              transform: translateY(0%);
+            }
+          }
+          &.dental {
+            &:hover {
+              transform: translateY(-50%);
+            }
+          }
+          &.mceem {
+            &:hover {
+              transform: translateY(-84%);
+            }
+          }
+        }
+      }
+      & .description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        width: 450px;
+        & h3 {
+          color: $main-color;
+          margin: 0;
+        }
+        & p {
+          color: #767676;
+          font-weight: 500;
+        }
+        & .techs {
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          margin: 20px 0 35px;
+          & span {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #000;
+            font-weight: 600;
+            padding: 10px 10px;
+          }
+        }
+        & .links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          & a {
+            & span {
+              color: black;
+              margin-right: 7px;
+              font-size: 20px;
+              transition: all $main-transition;
+            }
+            & svg {
+              height: 20px;
+              width: 20px;
+              object-fit: cover;
+              color: black;
+              transition: all $main-transition;
+
+              &.git {
+                height: 25px;
+                width: 25px;
+              }
+            }
+            &:hover {
+              & svg,
+              span {
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

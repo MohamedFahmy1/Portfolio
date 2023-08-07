@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./LandingContent.module.scss";
 import { Typewriter } from "react-simple-typewriter";
 const LandingContent = () => {

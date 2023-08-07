@@ -4,9 +4,8 @@
 .projects {
   background-color: $white-color;
   position: relative;
-  height: 148vh;
   & .img {
-    background: url(../../images/Keyboard.jpg) no-repeat center center fixed;
+    background: url(../../images/Keyboard.avif) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     width: 100%;
@@ -16,7 +15,7 @@
   }
 }
 .img2 {
-  background: url(../../images/Laptop.jpg) no-repeat center center fixed;
+  background: url(../../images/Laptop.avif) no-repeat center center fixed;
   background-size: cover;
   display: flex;
   width: 100%;

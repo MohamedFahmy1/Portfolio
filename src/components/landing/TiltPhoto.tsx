@@ -41,7 +41,7 @@ const TiltPhoto = () => {
         )}
 
         <img
-          src={require("../../images/me.jpeg")}
+          src={require("../../images/me.avif")}
           className="tilt"
           alt="Myself"
         />

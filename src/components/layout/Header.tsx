@@ -9,9 +9,9 @@ import {
   faHouseChimney,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import logoWhite from "../../images/white-removebg-preview.png";
-import logoCol from "../../images/colored-removebg-preview.png";
-import logoBlack from "../../images/black-removebg-preview.png";
+import logoWhite from "../../images/white-removebg-preview.avif";
+import logoCol from "../../images/colored-removebg-preview.avif";
+import logoBlack from "../../images/black-removebg-preview.avif";
 const Header: React.FC<{
   scrollTop: number | 0;
   darkMode: (darkMode: boolean) => void;

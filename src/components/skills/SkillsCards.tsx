@@ -12,10 +12,14 @@ import git from "../../images/icons/github.png";
 import jest from "../../images/icons/jest.png";
 import c from "../../images/icons/letter-c.png";
 import csharp from "../../images/icons/c-sharp.png";
-import photoshop from "../../images/icons/photoshop.png";
+import figma from "../../images/icons/figma.png";
 import bootstrap from "../../images/icons/bootstrap.png";
 import npm from "../../images/icons/npm.png";
 import typescript from "../../images/icons/typescript.png";
+import photoshop from "../../images/icons/photoshop.png";
+import material from "../../images/icons/materialUI.png";
+import vercel from "../../images/icons/vercel.svg";
+import rapid from "../../images/icons/RapidAPI.png";
 const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
   const styles = {
     card: { background: "#7373ff", color: "white", borderRadius: 20 },
@@ -53,6 +57,14 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
+        frontComponent={<img src={typescript} alt="typescript icon" />}
+        backComponent={<div>TypeScript</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
         frontComponent={<img src={sass} alt="sass icon" />}
         backComponent={<div>Sass</div>}
         frontCss="front"
@@ -77,6 +89,14 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
+        frontComponent={<img src={material} alt="materialUI icon" />}
+        backComponent={<div>Material UI</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
         frontComponent={<img src={router} alt="router icon" />}
         backComponent={<div>React Router</div>}
         frontCss="front"
@@ -87,6 +107,14 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
         backStyle={styles.card}
         frontComponent={<img src={nextjs} alt="nextjs icon" />}
         backComponent={<div>Next.js</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={vercel} alt="vercel icon" />}
+        backComponent={<div>Vercel</div>}
         frontCss="front"
         backCss="back"
       />
@@ -141,8 +169,16 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={typescript} alt="typescript icon" />}
-        backComponent={<div>TypeScript</div>}
+        frontComponent={<img src={rapid} alt="rapidAPI icon" />}
+        backComponent={<div>Rapid API</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={figma} alt="figma icon" />}
+        backComponent={<div>Figma</div>}
         frontCss="front"
         backCss="back"
       />

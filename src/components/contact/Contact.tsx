@@ -68,7 +68,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
                   </a>
                 </div>
               </div>
-              <div className="socialMedia">
+              <div className="social-media">
                 <a
                   href="https://github.com/mohamedFahmy1"
                   target="_blank"

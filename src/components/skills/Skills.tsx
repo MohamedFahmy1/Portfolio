@@ -32,7 +32,7 @@ const Skills: React.FC<{ scrollTop: number | 0 }> = (props) => {
                   words={[
                     "Front-end Developer.",
                     "React Developer.",
-                    "JavaScript Developer.",
+                    "JavaScript Developer",
                   ]}
                   loop={false}
                   cursor
@@ -40,11 +40,13 @@ const Skills: React.FC<{ scrollTop: number | 0 }> = (props) => {
               </span>
             </h3>
             <p>
-              Hello, I am an Ambitious <span>Front end Developer</span>,I adore
-              this career and I have experience with languagues and libraries
-              like <span>JavaScript </span>, <span>C# </span>, <span>Sass</span>
-              , <span>TypeScript</span>.... and with frameworks like{" "}
-              <span>Next.js</span> & <span>Bootstrap.</span>
+              Hi, my name is Mohamed an Ambitious{" "}
+              <span>Front end Developer</span>,I adore this career and always
+              looking to learn new technologies, I specialize in{" "}
+              <span>React</span> ,<span>Next.js</span> and made many projects
+              for more than a year with the latest technologies on the field and
+              I am looking for opportunities that would help me grow
+              professionally while being resourceful for the organization.
             </p>
           </div>
           <SkillsCards scrollTop={props.scrollTop} />

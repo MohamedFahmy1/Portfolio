@@ -130,7 +130,7 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
         frontStyle={styles.card}
         backStyle={styles.card}
         frontComponent={<img src={jest} alt="jest icon" />}
-        backComponent={<div>Jest</div>}
+        backComponent={<div>Jest&RTL</div>}
         frontCss="front"
         backCss="back"
       />

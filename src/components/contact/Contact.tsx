@@ -25,7 +25,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
         <div className="contactContent">
           <div
             className={
-              props.scrollTop > 4300 ? "left-content visible" : "left-content"
+              props.scrollTop > 4700 ? "left-content visible" : "left-content"
             }
           >
             <h3>Social Stats</h3>
@@ -93,7 +93,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
               </div>
             </div>
           </div>
-          <div className={props.scrollTop > 4300 ? "right visible" : "right"}>
+          <div className={props.scrollTop > 4700 ? "right visible" : "right"}>
             <FormEmail scrollTop={props.scrollTop} />
           </div>
         </div>

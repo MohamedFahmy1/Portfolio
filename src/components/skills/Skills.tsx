@@ -40,8 +40,8 @@ const Skills: React.FC<{ scrollTop: number | 0 }> = (props) => {
               </span>
             </h3>
             <p>
-              Hi, my name is Mohamed an Ambitious{" "}
-              <span>Front end Developer</span>,I adore this career and always
+              Hi, My name is Mohamed an Ambitious{" "}
+              <span>Front end Developer</span>, I adore this career and always
               looking to learn new technologies, I specialize in{" "}
               <span>React</span> ,<span>Next.js</span> and made many projects
               for more than a year with the latest technologies on the field and

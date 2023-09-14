@@ -22,7 +22,7 @@ import vercel from "../../images/icons/vercel.svg";
 import rapid from "../../images/icons/RapidAPI.png";
 const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
   const styles = {
-    card: { background: "#7373ff", color: "white", borderRadius: 20 },
+    card: { background: "#1584db", color: "white", borderRadius: 20 },
   };
   return (
     <div
@@ -130,7 +130,13 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
         frontStyle={styles.card}
         backStyle={styles.card}
         frontComponent={<img src={jest} alt="jest icon" />}
-        backComponent={<div>Jest&RTL</div>}
+        backComponent={
+          <div>
+            Jest &
+            <br />
+            RTL
+          </div>
+        }
         frontCss="front"
         backCss="back"
       />

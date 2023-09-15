@@ -22,10 +22,10 @@ const LandingContent = () => {
           download
         >
           <button className={styles.button}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span aria-hidden="true" className="presentation"></span>
+            <span aria-hidden="true" className="presentation"></span>
+            <span aria-hidden="true" className="presentation"></span>
+            <span aria-hidden="true" className="presentation"></span>
             Download CV
           </button>
         </a>

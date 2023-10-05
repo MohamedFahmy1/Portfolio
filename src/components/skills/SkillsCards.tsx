@@ -6,7 +6,6 @@ import js from "../../images/icons/js.png";
 import sass from "../../images/icons/sass.png";
 import react from "../../images/icons/React.png";
 import redux from "../../images/icons/redux-icon.png";
-import router from "../../images/icons/react-router.png";
 import nextjs from "../../images/icons/nextjs.png";
 import git from "../../images/icons/github.png";
 import jest from "../../images/icons/jest.png";
@@ -14,12 +13,17 @@ import c from "../../images/icons/letter-c.png";
 import csharp from "../../images/icons/c-sharp.png";
 import figma from "../../images/icons/figma.png";
 import bootstrap from "../../images/icons/bootstrap.png";
-import npm from "../../images/icons/npm.png";
 import typescript from "../../images/icons/typescript.png";
-import photoshop from "../../images/icons/photoshop.png";
 import material from "../../images/icons/materialUI.png";
-import vercel from "../../images/icons/vercel.svg";
-import rapid from "../../images/icons/RapidAPI.png";
+import tailwind from "../../images/icons/tailwind.png";
+import shadcn from "../../images/icons/shadcnUI.png";
+import cheerio from "../../images/icons/cheerio.svg";
+import puppeteer from "../../images/icons/puppeteer.png";
+import axios from "../../images/icons/axios.png";
+import zod from "../../images/icons/zod.png";
+import react_hook from "../../images/icons/react-hook-form.png";
+import react_query from "../../images/icons/react-query.png";
+import recoil from "../../images/icons/recoil.svg";
 const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
   const styles = {
     card: { background: "#1584db", color: "white", borderRadius: 20 },
@@ -97,8 +101,8 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={router} alt="router icon" />}
-        backComponent={<div>React Router</div>}
+        frontComponent={<img src={shadcn} alt="ShadcnUI icon" />}
+        backComponent={<div>Shadcn UI</div>}
         frontCss="front"
         backCss="back"
       />
@@ -113,8 +117,8 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={vercel} alt="vercel icon" />}
-        backComponent={<div>Vercel</div>}
+        frontComponent={<img src={recoil} alt="recoil icon" />}
+        backComponent={<div>Recoil</div>}
         frontCss="front"
         backCss="back"
       />
@@ -143,8 +147,8 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={c} alt="c icon" />}
-        backComponent={<div>C</div>}
+        frontComponent={<img src={tailwind} alt="tailwind icon" />}
+        backComponent={<div>Tailwind</div>}
         frontCss="front"
         backCss="back"
       />
@@ -167,16 +171,40 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={npm} alt="npm icon" />}
-        backComponent={<div>NPM</div>}
+        frontComponent={<img src={axios} alt="axios icon" />}
+        backComponent={<div>Axios</div>}
         frontCss="front"
         backCss="back"
       />
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={rapid} alt="rapidAPI icon" />}
-        backComponent={<div>Rapid API</div>}
+        frontComponent={<img src={zod} alt="zod icon" />}
+        backComponent={<div>ZOD</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={react_hook} alt="react hook form icon" />}
+        backComponent={<div>React Hook Form</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={cheerio} alt="cheerio icon" />}
+        backComponent={<div>Cheerio</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={puppeteer} alt="puppeteer icon" />}
+        backComponent={<div>Puppeteer</div>}
         frontCss="front"
         backCss="back"
       />
@@ -191,8 +219,8 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={photoshop} alt="photoshop icon" />}
-        backComponent={<div>Photoshop</div>}
+        frontComponent={<img src={react_query} alt="React Query icon" />}
+        backComponent={<div>React Query</div>}
         frontCss="front"
         backCss="back"
       />

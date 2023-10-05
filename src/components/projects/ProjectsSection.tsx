@@ -15,7 +15,7 @@ let projectsData = [
   {
     name: "Playtube",
     description:
-      "Playtube is a Multi Page youtube clone Website made with Next.js App Router and Dynamic pages system, with the help of Youtube V3 API you can watch and search for your favorite videos and channels on my site",
+      "Playtube is a Multi Page youtube clone Website made with Next.js App Router and Dynamic pages system, with the help of Youtube API you can watch and search for your favorite videos and channels on my site",
     technologies: ["React.js", "Next.js", "Material UI", "TypeScript"],
     demo: "playtube-coral.vercel.app",
     code: "github.com/MohamedFahmy1/Playtube",

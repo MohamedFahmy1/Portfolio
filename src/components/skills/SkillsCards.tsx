@@ -24,6 +24,7 @@ import zod from "../../images/icons/zod.png";
 import react_hook from "../../images/icons/react-hook-form.png";
 import react_query from "../../images/icons/react-query.png";
 import recoil from "../../images/icons/recoil.svg";
+import reactNative from "../../images/icons/react-native.png";
 const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
   const styles = {
     card: { background: "#1584db", color: "white", borderRadius: 20 },
@@ -93,6 +94,14 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
+        frontComponent={<img src={recoil} alt="recoil icon" />}
+        backComponent={<div>Recoil</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
         frontComponent={<img src={material} alt="materialUI icon" />}
         backComponent={<div>Material UI</div>}
         frontCss="front"
@@ -114,19 +123,20 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
         frontCss="front"
         backCss="back"
       />
+
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={recoil} alt="recoil icon" />}
-        backComponent={<div>Recoil</div>}
+        frontComponent={<img src={bootstrap} alt="bootstrap icon" />}
+        backComponent={<div>Bootstrap</div>}
         frontCss="front"
         backCss="back"
       />
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={bootstrap} alt="bootstrap icon" />}
-        backComponent={<div>Bootstrap</div>}
+        frontComponent={<img src={tailwind} alt="tailwind icon" />}
+        backComponent={<div>Tailwind</div>}
         frontCss="front"
         backCss="back"
       />
@@ -147,8 +157,48 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={tailwind} alt="tailwind icon" />}
-        backComponent={<div>Tailwind</div>}
+        frontComponent={<img src={react_query} alt="React Query icon" />}
+        backComponent={<div>React Query</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={reactNative} alt="React Native icon" />}
+        backComponent={<div>React Native</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={axios} alt="axios icon" />}
+        backComponent={<div>Axios</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={react_hook} alt="react hook form icon" />}
+        backComponent={<div>React Hook Form</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={zod} alt="zod icon" />}
+        backComponent={<div>ZOD</div>}
+        frontCss="front"
+        backCss="back"
+      />
+      <ReactFlipCard
+        frontStyle={styles.card}
+        backStyle={styles.card}
+        frontComponent={<img src={c} alt="c icon" />}
+        backComponent={<div>C</div>}
         frontCss="front"
         backCss="back"
       />
@@ -165,30 +215,6 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
         backStyle={styles.card}
         frontComponent={<img src={git} alt="git icon" />}
         backComponent={<div>Git/Github</div>}
-        frontCss="front"
-        backCss="back"
-      />
-      <ReactFlipCard
-        frontStyle={styles.card}
-        backStyle={styles.card}
-        frontComponent={<img src={axios} alt="axios icon" />}
-        backComponent={<div>Axios</div>}
-        frontCss="front"
-        backCss="back"
-      />
-      <ReactFlipCard
-        frontStyle={styles.card}
-        backStyle={styles.card}
-        frontComponent={<img src={zod} alt="zod icon" />}
-        backComponent={<div>ZOD</div>}
-        frontCss="front"
-        backCss="back"
-      />
-      <ReactFlipCard
-        frontStyle={styles.card}
-        backStyle={styles.card}
-        frontComponent={<img src={react_hook} alt="react hook form icon" />}
-        backComponent={<div>React Hook Form</div>}
         frontCss="front"
         backCss="back"
       />
@@ -213,14 +239,6 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
         backStyle={styles.card}
         frontComponent={<img src={figma} alt="figma icon" />}
         backComponent={<div>Figma</div>}
-        frontCss="front"
-        backCss="back"
-      />
-      <ReactFlipCard
-        frontStyle={styles.card}
-        backStyle={styles.card}
-        frontComponent={<img src={react_query} alt="React Query icon" />}
-        backComponent={<div>React Query</div>}
         frontCss="front"
         backCss="back"
       />

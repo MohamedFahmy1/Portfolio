@@ -24,7 +24,8 @@ import zod from "../../images/icons/zod.png";
 import react_hook from "../../images/icons/react-hook-form.png";
 import react_query from "../../images/icons/react-query.png";
 import recoil from "../../images/icons/recoil.svg";
-import reactNative from "../../images/icons/react-native.png";
+import webpack from "../../images/icons/webpack.png";
+
 const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
   const styles = {
     card: { background: "#1584db", color: "white", borderRadius: 20 },
@@ -165,8 +166,8 @@ const SkillsCards: React.FC<{ scrollTop: number | 0 }> = (props) => {
       <ReactFlipCard
         frontStyle={styles.card}
         backStyle={styles.card}
-        frontComponent={<img src={reactNative} alt="React Native icon" />}
-        backComponent={<div>React Native</div>}
+        frontComponent={<img src={webpack} alt="webpack icon" />}
+        backComponent={<div>Webpack</div>}
         frontCss="front"
         backCss="back"
       />

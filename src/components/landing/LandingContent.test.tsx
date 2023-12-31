@@ -1,5 +1,4 @@
 import { Typewriter } from "react-simple-typewriter";
-import React from "react";
 import { render, screen } from "@testing-library/react";
 import LandingContent from "./LandingContent";
 import "@testing-library/jest-dom/extend-expect";

@@ -40,7 +40,7 @@
         background-color: hsla(0, 0%, 46%, 0.2);
         border-radius: 30px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        height: auto;
+        height: 83%;
         overflow: hidden;
         width: 550px;
         @include average-screen {
@@ -55,7 +55,7 @@
             transform: translateY(-75%);
           }
           &.weather {
-            height: 100%;
+            height: auto;
             &:hover {
               transform: translateY(0%);
             }
@@ -71,7 +71,7 @@
             }
           }
           &.playtube {
-            height: 100%;
+            height: auto;
             &:hover {
               transform: translateY(0);
             }

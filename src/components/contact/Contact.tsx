@@ -73,6 +73,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
                   href="https://github.com/mohamedFahmy1"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="go to my github"
                 >
                   <FontAwesomeIcon className="icon" icon={faGithub} />
                 </a>
@@ -80,6 +81,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
                   href="https://www.linkedin.com/in/mohamed-fahmy-580342220/"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="go to my linkedin"
                 >
                   <FontAwesomeIcon className="icon" icon={faLinkedin} />
                 </a>
@@ -87,6 +89,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
                   href="https://www.facebook.com/profile.php?id=100001739833921"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="go to my facebook"
                 >
                   <FontAwesomeIcon className="icon" icon={faFacebook} />
                 </a>

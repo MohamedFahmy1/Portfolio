@@ -1,3 +1,4 @@
+import React from "react";
 import Landing from "./components/landing/Landing";
 import Header from "./components/layout/Header";
 import { useState, useEffect } from "react";

@@ -1,6 +1,7 @@
 import "./Projects.scss";
 import Wave from "react-wavify";
 import ProjectsSection from "./ProjectsSection";
+
 const Projects: React.FC<{ darkModeEnabled: boolean }> = (props) => {
   const waveColor = !props.darkModeEnabled ? "#333333" : "#ffffff";
   return (

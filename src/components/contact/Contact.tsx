@@ -51,7 +51,7 @@ const Contact: React.FC<{ scrollTop: number | 0 }> = (props) => {
                 <FontAwesomeIcon className="icon" icon={faPhone} bounce />
                 <div className="info">
                   <h4>Phone Number</h4>
-                  <a href="tel:+963933966085">+20 01121870088.</a>
+                  <a href="tel:+2001121870088">+20 01121870088.</a>
                 </div>
               </div>
               <div className="box">

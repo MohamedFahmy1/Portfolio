@@ -12,6 +12,9 @@
     height: 450px;
     max-height: 520px;
     position: relative;
+    & > div {
+      border-bottom: 1px solid $white-color;
+    }
   }
 }
 .img2 {
@@ -22,6 +25,9 @@
   height: 450px;
   max-height: 520px;
   position: relative;
+  & > div {
+    border-bottom: 1px solid $white-color;
+  }
 }
 
 .darkModeEnabled {
@@ -29,5 +35,15 @@
   $black-color: #fff;
   .projects {
     background-color: $white-color;
+    & .img {
+      & > div {
+        border-bottom: 1px solid $white-color;
+      }
+    }
+  }
+  .img2 {
+    & > div {
+      border-bottom: 1px solid $white-color;
+    }
   }
 }

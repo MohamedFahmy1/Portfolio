@@ -15,8 +15,8 @@ export const FormEmail = (props) => {
         "ctteNpP5qhjkDwvLt"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          alert("Message sent successfully!");
         },
         (error) => {
           console.log(error.text);

@@ -9,7 +9,7 @@ export const FormEmail = (props) => {
 
     emailjs
       .sendForm(
-        "service_544k65k",
+        "service_bdhres2",
         "template_ilio1sz",
         form.current,
         "ctteNpP5qhjkDwvLt"
